@@ -1,0 +1,344 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    background-color: white;
+}
+nav{
+    position: sticky;
+    top: 0px;
+    height: 18vh;
+    display: flex;
+    padding: 2%;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 2000;
+    
+}
+.leftside-icons img{
+    height: 13vh;
+    border-radius: 50%;
+}
+.rightside-icons {
+    background-color: white;
+    padding: 0.8%;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.rightside-icons button{
+    padding: 10px 15px 10px 15px;
+    background-color: #d1f348;
+    border: none;
+    border-radius: 15px;
+    font-size: 1.3vmax;
+
+}
+.active-btn {
+    height: 10px;
+    width: 10px;
+    border-radius: 50%;
+    background-color:  #d1f348;
+    position: relative;
+    left: 1.6vw;
+    animation: blink 2s ease-in-out infinite;
+}
+@keyframes blink {
+    0% {
+      opacity: 0;
+      height: 10px;
+      width: 10px;
+    }
+    100% {
+      opacity: 3;
+      height: 12px;
+      width: 12px;
+    }
+  }
+button a{
+    text-decoration: none;
+    color: black;
+}
+
+#intro{
+    padding: 3%;
+}
+
+.box1{
+    margin-top: 15vh;
+}
+.box1 h4{
+   font-size: 2.4vmax;
+   margin-bottom: 1.2%;
+}
+.box1 h2{
+    font-size: 7vmax;
+    font-weight: bolder;
+    line-height: 0.8;
+}
+.sameline{
+    display: flex;
+}
+.box2 h2{
+    margin-top: 2%;
+    margin-left: 15vw;
+    font-size: 13vmax;
+    font-weight: bolder;
+    line-height: 0.8;
+    color: rgba(128, 128, 128, 0.6);
+}
+.box2 p{
+    margin-top: 3%;
+    font-size: 3vmax;
+    line-height: 0.8;
+    color: rgba(128, 128, 128, 0.6);
+}
+
+
+
+
+/* Outer container to hold the scroller */
+.image-scroller {
+    width: 100%;
+    overflow: hidden; /* Hide overflowing images */
+    position: relative;
+    top: -13vh;
+  }
+  
+  /* Scroller container for images */
+  .scroller-container {
+    display: flex;
+    width: calc(65vmax * 6); /* 3 images */
+    animation: scroll-right 40s linear infinite; /* Scroll right animation */
+    gap: 50px;
+  }
+  
+  /* Style for images */
+  .scroller-container img {
+    height: 35vmax;
+    width: 65vmax;
+    flex-shrink: 0; /* Prevent images from shrinking */
+  }
+  
+  /* Keyframes for scrolling right */
+  @keyframes scroll-right {
+    0% {
+      transform: translateX(-80%); /* Start position (off-screen left) */
+    }
+    100% {
+      transform: translateX(0); /* End position (fully visible on the right) */
+    }
+  }
+
+
+  #about{
+    background-color: black;
+    color: white;
+    padding: 3%;
+    padding-bottom: 0%;
+    overflow: hidden; 
+  }
+.text h2{
+    font-size: 15vmax;
+    line-height: 0.8;
+    color: rgba(128, 128, 128, 0.6);
+    position: relative;
+    top: -13vh;
+    left: 18vw;
+   
+}
+
+.about-box{
+    position: relative;
+    top: -20vh;
+    padding: 5%;
+    padding-bottom: 0%;
+    display: flex;
+    gap: 10vw;
+}
+
+.about-info h1{
+     font-size: 7vmax;
+}
+.about-info p{
+    font-size: 1.3vmax;
+    margin-bottom: 3%;
+}
+
+.about-img img{
+    height: 40vmax;
+    position: relative;
+    top: -8vh;
+}
+
+
+
+/* Skills Container */
+.skills-container {
+    width: 100%;
+    overflow: hidden;
+    background: black;
+    padding: 20px 0;
+    position: relative;
+    top: -10vh;
+  }
+  
+  /* Skills Slider */
+  .skills-slider {
+    display: flex;
+    align-items: center;
+    width: calc(200px * 6); /* 200px per image, adjust based on number */
+    animation: scroll 15s linear infinite;
+  }
+  
+  .skill-img {
+    height: 5vmax;
+    margin: 0 10px;
+    margin-left: 5vw;
+  }
+  
+  /* Animation */
+  @keyframes scroll {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(calc(-200px * 6)); /* Scroll out full width */
+    }
+  }
+  
+  #personal-info{
+    background-color: white;
+    padding: 3%;
+    overflow: hidden;
+    
+  }
+.personal-text h2{
+    font-size: 10vmax;
+    line-height: 0.9;
+    color: grey;
+
+}
+.personal-text{
+  position: relative;
+  top: -70px;
+}
+.fitness{
+  display: flex;
+}
+.fitness p{
+  margin-top: 2%;
+  padding-right: 10%;
+  font-size: 1.5vmax;
+}
+
+
+
+#contact{
+    background-color: black;
+    color: white;
+    padding: 8% 4% 2% 4%;
+}
+#contact h2{
+    font-size: 5vmax;
+    margin-bottom: 2%;
+}
+#contact p{
+    font-size: 1.5vmax;
+    color: rgba(255, 255, 255, 0.548);
+}
+#contact h3{
+    margin-top: 1.8%;
+}
+#contact h3 a{
+    font-size: 3vmax;
+    color: #d1f348;
+}
+#contact .align-line h2{
+    font-size: 12vmax;
+    line-height: 0.6;
+    margin-top: 1.8%;
+    margin-left: 5vw;
+    color: rgba(128, 128, 128, 0.6);
+}
+
+
+@media (max-width: 430px) {
+  nav{
+    height: 13vh;
+  }
+.leftside-icons img{
+    height: 9vh;
+    border-radius: 50%;
+  }
+
+  .box1{
+    margin-top: 5vh;
+  }
+  .box1 h2{
+    font-size: 4vmax;
+  }
+
+  .box2 h2{
+    font-size: 6vmax;
+  }
+  .box2 p{
+    font-size: 2vmax;
+  }
+  .image-scroller {
+    top: -2vh;
+  }
+
+.about-box{
+  flex-direction: column;
+}
+.text h2{
+  font-size: 7vmax;
+  top: -2.5vh;
+}
+.about-box{
+  position: relative;
+  top: -6vh;
+}
+.about-img img{
+  height: 40vmax;
+  position: relative;
+  top: -8vh;
+  margin: 10% auto;
+}
+.personal-text{
+  position: relative;
+  top: -25px;
+}
+.personal-text h2{
+  font-size: 6vmax;
+}
+.fitness{
+  flex-direction: column-reverse;
+}
+iframe{
+  margin: 5%;
+}
+
+
+
+
+
+
+
+
+
+
+
+  #contact .align-line h2{
+    font-size: 10vmax;
+    line-height: 0.8;
+}
+
+}
